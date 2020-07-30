@@ -1,0 +1,5 @@
+django==3.0
+buttercms-python==1.2
+python-dotenv==0.14.0
+python-dateutil==2.8.1
+humanize==2.5.0

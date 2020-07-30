@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+    <article class="blog-post px-3 py-5 p-md-5">
+        <div class="container">
+            <header class="blog-post-header">
+                <h2 class="title mb-2">{{post.title}}</h2>
+                <div class="meta mb-3"><span class="date">{% to_date post.published %}</span></div>
+            </header>
+
+            <div class="blog-post-body">
+                <figure class="blog-banner">
+                    <a href="https://made4dev.com"><img class="img-fluid" src="{{post.featured_image}}" alt="{{post.featured_image_alt}}"></a>
+                    <figcaption class="mt-2 text-center image-caption">Image Credit: <a href="https://made4dev.com?ref=devblog" target="_blank">made4dev.com (Premium Programming T-shirts)</a></figcaption>
+                </figure>
+                <div>
+                    {% safe_html post.body %}
+                </div>
+            </div>
+        </div>
+    </article>
+{% endblock %}
