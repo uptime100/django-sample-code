@@ -1,1 +1,3 @@
-# buttercms Django Challenge
+# ButterCMS Django Challenge
+
+
